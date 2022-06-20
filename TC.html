@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="TC.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Temperture Converter</h1>
+        <div class="child" id="child">
+            <p>Enter the value to convert.</p>
+            <input type="number" name="temp" id="temp_val"> 
+            <select name="unit" id="choose" class="choose">
+                <option value="cel">Celsius</option>
+                <option value="feh">Fahrenheit</option>
+            </select><br>
+            <button type="reset" class="btn" onclick="window.location.reload();" >Reset</button>
+            <button type="button" class="btn" onclick="showTemp()">Convert</button>
+            <span id="con_val"></span>
+        </div>
+    </div>
+    <script src="TC.js"></script>
+</body>
+</html>
